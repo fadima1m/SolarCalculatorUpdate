@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Project 15</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div id="keepOpen"></div>
+        <main>
+            <h1 id="heading">Solar Calculator Project</h1>
+            <form class="form green-form" name="solarForm" actions="" method="post">
+            <fieldset id="mpc"><legend id="heading2">Monthly Power Consumption</legend>
+                <p>In order to accurately calculate your solar needs, we need to know how much power you use. Please enter the last 12 months of electrical usage below:</p>
+                <section class="column1">
+                <label>January&emsp;<input name="jan" type="number" value="">kWh</label><br>
+                <label>February&ensp;<input name="feb" type="number" value="">kWh</label><br>
+                <label>March&emsp;&ensp;<input name="mar" type="number" value="">kWh</label><br>
+                <label>April&emsp;&ensp;&ensp;&nbsp;<input name="apr" type="number" value="">kWh</label><br>
+                <label>May&emsp;&emsp;&ensp;<input name="may" type="number" value="">kWh</label><br>
+                <label>June&emsp;&emsp;&nbsp;<input name="jun" type="number" value="">kWh</label><br>
+                </section>
+                <section class="column2">
+                <label>July&emsp;&emsp;&emsp;&emsp;<input name="jul" type="number" value="">kWh</label><br>
+                <label>August&emsp;&emsp;&ensp;<input name="aug" type="number" value="">kWh</label><br>
+                <label>September&ensp;&nbsp;<input name="sep" type="number" value="">kWh</label><br>
+                <label>October&emsp;&emsp;<input name="oct" type="number" value="">kWh</label><br>
+                <label>November&emsp;<input name="nov" type="number" value="">kWh</label><br>
+                <label>December&emsp;<input name="dec" type="number" value="">kWh</label>
+                </section>
+            </fieldset>
+
+              <section id="sunshineSection">
+                <fieldset><legend>Sunshine Zone</legend>
+                    <figure><img src="Peak-Sun-Hours-Calculator-Image-2-scaled.jpg" alt="us-solar-zone-map" width="600px" height="500px"></figure>
+                    <p>Please use this map to determine which zone you are in.</p>
+                    <select class="column" name="zone">
+                        <option>Zone 1</option>
+                        <option>Zone 2</option>
+                        <option>Zone 3</option>
+                        <option>Zone 4</option>
+                        <option>Zone 5</option>
+                        <option>Zone 6</option>
+                    </select>
+                </fieldset>
+               </section>
+               <section class="panelChoice">
+                <fieldset><legend>Panel Choice</legend>
+        
+                    <p>Please select a solar panel you would like to use.</p>
+                <select class="column" name="panel">
+                    <option value="250">Axitec AC-250P/156-60S </option>
+                    <option value="275">Canadian Solar CS6K-275M </option>
+                    <option value="260">Hanwha Q.Pro BFR-G4.260 </option>
+                </select>
+                </fieldset>
+               </section>
+            </form>
+
+            <button onclick="calculateSolar()">Calculate Solar Needs</button>
+            <h2>Solar Recommendation</h2>
+            <div id="feedback"><p>Enter your information above to calculate you solar needs.</p></div>
+        </main>
+    <footer>
+        <p>Created by Fadima Macalou for Week 15 Project on YearUp NY|NJ 2023 - Updated 2025</p>
+    </footer>
+</body>
+</html>
